@@ -1,0 +1,74 @@
+https://codeforces.com/gym/102479/problem/1
+
+
+C++:
+#include <iostream>
+
+using namespace std;
+
+void summ(long long n)
+{
+    long long x;
+    long long y;
+    if (n % 4 == 0)
+    {
+        x = (n + 4) / 4;
+        y = (n - 4) / 4;
+        cout<<"Yes"<<'\n'<<x<<" "<<y;
+    }
+    else if (n % 2 != 0)
+    {
+        x = (n + 1) / 2;
+        y = (n - 1) / 2;
+        cout<<"Yes"<<'\n'<<x<<" "<<y;
+    }
+    else
+    {
+        cout<<"No";
+    }
+}
+
+int main()
+{
+    long long n;
+    cin>>n;
+    if (n == 0)
+    {
+        cout<<"Yes"<<'\n'<<"23 23";
+    }
+    else if (n == 1 || n == 2 || n == 4)
+    {
+        cout<<"No";
+    }
+    else
+    {
+        summ(n);
+    }
+
+    return 0;
+}
+
+
+
+
+
+
+python:
+def summ(n):
+    if n % 4 == 0:
+        print("Yes")
+        print((n+4) // 4, (n-4) // 4)
+    elif n % 2 != 0:
+        print("Yes")
+        print((n + 1) // 2, (n - 1) // 2)
+    else:
+        print("No")
+
+n = int(input())
+if n == 0:
+    print("Yes")
+    print(13, 13)
+elif n in [1, 2, 4]:
+    print("No")
+else:
+    summ(n)
