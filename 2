@@ -1,0 +1,29 @@
+https://codeforces.com/gym/104010/problem/A
+
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n;
+    int m;
+    int v;
+    
+    cin>>n; //число сегодня
+    cin>>m; //число недели назад
+    
+    if (n > 7)
+    {
+        v = n - 7;
+    }
+    else
+    {
+        v = m + 7;
+    }
+    cout<<v;
+    
+
+    return 0;
+}
