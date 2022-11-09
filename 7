@@ -1,0 +1,23 @@
+https://codeforces.com/gym/104034/problem/1
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    long long a, b, t, A, B;
+    cin>>a>>b>>t;
+    
+    A = (a - t % a)%a;
+    B = (b - t % b)%b;
+    
+    if (A < B)
+    {
+        cout<<A;
+    }
+    else
+    {
+        cout<<B;
+    }
+    return 0;
+}
