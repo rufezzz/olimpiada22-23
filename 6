@@ -1,0 +1,17 @@
+https://codeforces.com/gym/104035/problem/3
+a = int(input())
+b = int(input()) + 1
+sum = 0
+
+while a != b:
+    A = a
+    B = b
+    while A + 1 != B:
+        x = (A + B) // 2
+        if len(str(a)) == len(str(x)):
+            A = x
+        else:
+            B = x
+    sum += (B - a) * len(str(a))
+    a = B
+print(sum)
