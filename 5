@@ -1,0 +1,31 @@
+https://codeforces.com/gym/104035/problem/2
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int A, B, C, K;
+    
+    cin>>A; //в 1-ом подъезде
+    cin>>B; //в 2-ом подъезде
+    cin>>C; //в 3-ем подъезде
+    cin>>K; //номер этажа, для которого Макс хочет узнать номера расположенных там квартир.
+    
+    if(K <= A)
+    {
+        cout << 3*K - 2 << '\n' << 3*K - 1 << '\n' << 3*K << '\n' ;
+    }
+    
+    if(K <= B)
+    {
+        cout << 3*K - 2 + 3*A << '\n' << 3*K - 1 + 3*A << '\n' << 3*K + 3*A << '\n';
+    }
+    
+    if(K <= C)
+    {
+        cout << 3*K - 2 + 3*A + 3*B << '\n' << 3*K - 1 + 3*A + 3*B << '\n' << 3*K + 3*A + 3*B << '\n';
+    }
+
+    return 0;
+}
