@@ -1,0 +1,19 @@
+https://codeforces.com/gym/104035/problem/1
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int N, A, B;
+    
+    cin>>N; //кол-во уроков
+    cin>>B; //длительность урока
+    cin>>A; //длительность обычной перемены
+    
+    int S = N*B + 30 + ((N-2)*A);
+    
+    cout<<S;
+
+    return 0;
+}
