@@ -1,0 +1,19 @@
+https://codeforces.com/gym/104033/problem/2
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n, m;
+    cin>>n;
+    cin>>m;
+    
+    if(m<n)
+    {
+        swap(m,n);
+    }
+    int n1 = 2 - (n%2);
+    int m1 = m - (n - n1);
+    cout<<n1*m1;
+}
