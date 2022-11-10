@@ -1,0 +1,21 @@
+https://codeforces.com/gym/104033/problem/3
+a = int(input())
+b = int(input())
+if a > b:
+   a = b
+L = 0
+R = a + 2
+while R - L > 1:
+   mid = (L + R) // 2
+   if (mid + a) * (a - mid + 1) // 2 >= b:
+      L = mid
+   else:
+      R = mid
+if (L + a) * (a - L + 1) // 2 < b:
+   print(0)
+else:
+   for i in range(R, a + 1):
+      print(i)
+   s = (R + a) * (a - R + 1) // 2
+   if b - s > 0:
+      print(b - s)
