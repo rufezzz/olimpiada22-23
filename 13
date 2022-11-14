@@ -1,0 +1,27 @@
+https://codeforces.com/gym/103715/problem/A
+
+#include <iostream>
+
+using namespace std;
+ 
+int main()
+{
+    
+    int a; //номера
+    int b; //страницы
+ 
+    int c; //время на номер
+    int d; //время на страницу
+ 
+    cin>>a;
+    cin>>b;
+    cin>>c;
+    cin>>d;
+ 
+    int s = (a*c)+(b*d);
+ 
+    cout<<s;
+    
+    return 0;
+ 
+}
