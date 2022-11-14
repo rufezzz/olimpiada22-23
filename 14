@@ -1,0 +1,30 @@
+https://codeforces.com/gym/103715/problem/G
+
+#include <iostream>
+
+using namespace std;
+ 
+int main()
+{
+    
+    int a;
+    std::string b; 
+    
+    cin>>a;
+    cin>>b; 
+ 
+    int s = 0;
+ 
+    for (int i = 0; i<a; ++i)
+    {
+        char c = b[i];
+        if(c =='x')
+        {
+            int s = i+1;
+            cout<<s<<' ';
+        }
+ 
+    }
+    return 0;
+}
+    
