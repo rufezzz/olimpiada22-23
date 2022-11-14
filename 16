@@ -1,0 +1,33 @@
+https://codeforces.com/gym/103665/problem/A#include <iostream>
+
+using namespace std;
+ 
+int main()
+{
+    
+    int a, x, b, y, c;
+    cin>>a>>x>>b>>y>>c;
+    
+    int A = c*x + a;
+    int B = c*y + b;
+    
+    if (A>B)
+    {
+        cout<<"Feefa";
+    }
+    else
+    {
+        if (A<B)
+        {
+            cout<<"Foofa";
+        }
+        else
+        {
+            cout<<"Draw";
+        }
+    }
+    return 0;
+    
+    
+}
+    
