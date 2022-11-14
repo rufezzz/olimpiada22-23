@@ -1,0 +1,16 @@
+https://codeforces.com/gym/103715/problem/B
+
+s = int(input())
+a = str(input())
+B = ""
+i = 0
+
+while i < s:
+   if a[i] != "*":
+      B = B + a[i]
+   else:
+      if a[i+1] != "*":
+         B = B + " "
+
+   i = i + 1
+print(B)
