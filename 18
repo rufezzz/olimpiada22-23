@@ -1,0 +1,14 @@
+https://codeforces.com/gym/103471/problem/1
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    long long T;
+    cin>>T;
+    cout<<(T+1)*(T+1);
+
+    return 0;
+}
