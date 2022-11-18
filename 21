@@ -1,0 +1,26 @@
+https://codeforces.com/gym/103566/problem/B
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n, s;
+    cin>>n>>s;
+    
+    if (n / s < 3 / 1)
+    {
+        cout<<"macchiato";
+    }
+    else if (n > 5 * s)
+    {
+        cout<<"latte";
+    }
+    else
+    {
+        cout<<"cappuccino";
+    }
+
+    return 0;
+}
