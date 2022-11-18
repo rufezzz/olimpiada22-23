@@ -1,0 +1,16 @@
+https://codeforces.com/gym/103411/problem/A
+
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int k, n, c;
+    cin>>k>>n>>c;
+    
+    cout<<(k*n)-(k*c);
+
+    return 0;
+}
