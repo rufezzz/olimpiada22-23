@@ -1,0 +1,27 @@
+https://codeforces.com/gym/103411/problem/D
+
+n = int(input())
+b = str(input())
+a = ''
+i = 0
+while n>i:
+   if b[i] == 'T':
+      a = a + 'A'
+
+   if b[i] == 'A':
+      a = a + 'T'
+
+   if b[i] == 'C':
+      a = a + 'G'
+
+   if b[i] == 'G':
+      a = a + 'C'
+
+   i = i + 1
+
+a = a[::-1]
+
+if a == b:
+   print("YES")
+else:
+   print("NO")
