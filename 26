@@ -1,0 +1,12 @@
+https://codeforces.com/gym/103385/problem/2
+
+n1 = int(input())
+n2 = int (input())
+if ( n1 % 2 != 0 ) or ( n1 == 0 and n2 % 2 != 0 ):
+    print ("No")
+else:
+    print ( "Yes" )
+    w = n1 // 2 + n2
+    k2 = min( n2 , w // 2 )
+    k1 = w - k2 * 2
+    print ( k1 , k2 )
