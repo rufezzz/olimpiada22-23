@@ -1,0 +1,4 @@
+https://codeforces.com/gym/103385/problem/1
+n = int (input ( ) )
+d = int (input ( ) )
+print (max(0 , (n-(8 - d )%7) // 7))
