@@ -1,0 +1,36 @@
+https://codeforces.com/gym/103385/problem/3
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n;
+    cin>>n;
+    
+    int c = 0;
+    int L = 0;
+    
+    int q;
+    cin>>q;
+    
+    int R = 1;
+    
+    while (R != n)
+    {
+        int y;
+        cin>>y;
+        if (q != y)
+        {
+            c = c + ((R - L) / 3);
+            L = R;
+            q = y;
+        }
+        R = R + 1;
+    }
+    int f = c + ( n - L) / 3;
+    cout<<f; 
+    
+    return 0;
+}
